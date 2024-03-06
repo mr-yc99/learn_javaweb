@@ -12,5 +12,7 @@ public class UseGit {
         System.out.println("01branch edit");
         System.out.println("01branch edit");
         System.out.println("master edit2");
+
+        System.out.println("push test");
     }
 }
