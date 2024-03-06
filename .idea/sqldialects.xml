@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/demo-tlias/src/main/resources/com/learnjava/demotlias/mapper/EmpMapper.xml" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/mybatis-opt/src/main/resources/com/learnjava/mapper/EmpMapper.xml" dialect="MySQL" />
+    <file url="PROJECT" dialect="MySQL" />
+  </component>
+</project>

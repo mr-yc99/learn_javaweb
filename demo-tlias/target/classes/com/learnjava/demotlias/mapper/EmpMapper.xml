@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.learnjava.demotlias.mapper.EmpMapper">
+    <insert id="addEmp">
+        INSERT INTO emp(username, name, gender, image, job, entrydate, dept_id, create_time, update_time)
+        VALUES (#{username}, #{name}, #{gender}, #{image}, #{job}, #{entrydate}, #{deptId}, #{createTime},#{updateTime})
+    </insert>
+    <update id="putEmp">
+        UPDATE emp
+#         下面应该使用if标签和set标签
+        SET username = #{username}, name = #{name}, gender = #{gender}, image = #{image},
+            dept_id = #{deptId}, entrydate = #{entrydate}, job = #{job}
+        WHERE id = #{id}
+
+    </update>
+
+    <delete id="deleteByID">
+        DELETE FROM emp
+        WHERE id IN
+        <foreach collection="ids" item="id" separator="," open="(" close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <select id="getByPage" resultType="com.learnjava.demotlias.pojo.Emp">
+        SELECT *
+        FROM emp
+        <where>
+            <if test="name != null and name != '' ">
+                name LIKE concat('%', #{name}, '%')
+            </if>
+            <if test="gender != null">
+                AND gender = #{gender}
+            </if>
+            <if test="begin != null and end != null">
+                AND entrydate BETWEEN #{begin} AND #{end}
+            </if>
+        </where>
+        ORDER BY update_time desc
+    </select>
+
+
+
+
+
+</mapper>

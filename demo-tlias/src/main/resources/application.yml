@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/java_web_demo_tlias
+    username: root
+    password: 123456
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+
+#
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+
+#
+aliyun:
+  oss:
+    endPoint: https://oss-cn-beijing.aliyuncs.com
+    bucketName: learnjava-web-demo1-tlias
+    accessKeyId: LTAI5tNGRp4WiD48itKBVK2q
+    accessKeySecret: NvNTFGODP1CEC3nGOQrs583Htmz0U8
+
+#spring: 事务管理
+logging:
+  level:
+    org.springframework.jdbc.support.JdbcTransactionManager: debug

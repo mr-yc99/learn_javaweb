@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springboot-aop-quickstart" />
+        <module name="demo-tlias" />
+        <module name="mp-demo" />
+        <module name="itheima-utils" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="17">
+      <module name="maven-project01" target="17" />
+      <module name="maven-project02" target="11" />
+      <module name="mybatis-opt" target="17" />
+      <module name="springboot-mybatis-quickstart" target="17" />
+      <module name="springboot-web-quickstart1" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo-tlias" options="-parameters" />
+      <module name="mp-demo" options="-parameters" />
+      <module name="mybatis-opt" options="-parameters" />
+      <module name="springboot-aop-quickstart" options="-parameters" />
+      <module name="springboot-mybatis-quickstart" options="-parameters" />
+      <module name="springboot-web-quickstart1" options="-parameters" />
+    </option>
+  </component>
+</project>
