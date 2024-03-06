@@ -14,5 +14,7 @@ public class UseGit {
         System.out.println("master edit2");
 
         System.out.println("push test");
+
+        System.out.println("edit in Github");
     }
 }
