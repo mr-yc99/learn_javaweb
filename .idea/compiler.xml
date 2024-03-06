@@ -9,8 +9,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-aop-quickstart" />
         <module name="demo-tlias" />
-        <module name="mp-demo" />
         <module name="itheima-utils" />
+        <module name="testgit" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="17">
@@ -24,7 +24,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo-tlias" options="-parameters" />
-      <module name="mp-demo" options="-parameters" />
+      <module name="mp-demo" options="" />
       <module name="mybatis-opt" options="-parameters" />
       <module name="springboot-aop-quickstart" options="-parameters" />
       <module name="springboot-mybatis-quickstart" options="-parameters" />
